@@ -3,13 +3,13 @@ Classes, Solvers and Utilities
 
 Graph_Class
 -----------------
-.. automodule:: DyGyS.Graph_Class
+.. automodule:: NuMeTriS.Graph_Class
     :members:
 
 
 Utility Functions
 ------------------
 
-.. automodule:: DyGyS.Utility_Functions
+.. automodule:: NuMeTriS.Utility_Functions
     :members:
 
