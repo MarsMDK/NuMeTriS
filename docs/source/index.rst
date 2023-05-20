@@ -23,7 +23,7 @@ When using the module for your scientific research please consider citing:
 ::
     @misc{divece_2023_commodity,
       title = {Commodity-specific triads in the Dutch inter-industry production network},
-      author = {Di Vece, Marzio and Pijpers, Frank P. and Squartini, Tiziano},
+      author = {Di Vece, Marzio and Pijpers, Frank P. and Garlaschelli, Diego},
       year={2023},
       eprint={forthcoming},
       archivePrefix={arXiv},
