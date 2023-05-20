@@ -197,17 +197,6 @@ Guide
    license
    contacts
 
-Credits
-=========================
-
-*Author*:
-
-[Marzio Di Vece](https://www.imtlucca.it/it/marzio.divece) (a.k.a. [MarsMDK](https://github.com/MarsMDK))
-
-*Acknowledgments*:
-The module was developed under the supervision of [Diego Garlaschelli](https://www.imtlucca.it/en/diego.garlaschelli) and [Tiziano Squartini](https://www.imtlucca.it/en/tiziano.squartini).
-It was developed at [IMT School for Advanced Studies Lucca](https://www.imtlucca.it/en) and is supported by the Italian ‘Programma di Attività Integrata’ (PAI) project ‘Prosociality, Cognition and Peer Effects’ (Pro.Co.P.E.), funded by IMT School for Advanced Studies.
-
 
 References
 =====================
