@@ -5,7 +5,7 @@
 NuMeTriS is a package developed on python3 for Pattern Detection of the 13 triadic connected sub-graphs using maximum-entropy models using direected and reciprocated constraints on network data.
 
 NuMeTriS provides solvers for the binary models DBCM and RBCM, and the conditional weighted models CReMa and CRWCM.
-All of these models are explained in [1](forthcoming on ArXiv).
+All of these models are explained in [1]([forthcoming on ArXiv](https://arxiv.org/abs/2305.12179)).
 The use of DBCM and CReMa enable the user to explicitly constrain network properties based on direction, such as out-degree, in-degree (binary) and out-strength and in-strength (weighted).
 In contrast, the use of RBCM and CRWCM enable the user to constrain network properties based on both direction and reciprocity, such as the reciprocated and non-reciprocated degrees and the reciprocated and non-reciprocated strengths.
 
