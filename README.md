@@ -1,4 +1,4 @@
-![PyPI](https://img.shields.io/badge/pypi-v2.1.1-blue)  [![License:GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![Python Version](https://img.shields.io/badge/Python-3.9%20%7C%203.10-blue) 
+![PyPI](https://img.shields.io/badge/pypi-v2.1.1-blue)  [![License:GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![Python Version](https://img.shields.io/badge/Python-3.9%20%7C%203.10-blue) ![arXiv]([https://img.shields.io/badge/pypi-v2.1.1-blue](https://img.shields.io/badge/arXiv-2305.12179-orange))
 
 # NuMeTriS: NUll ModEls for TRIadic Structures
 
@@ -17,14 +17,14 @@ When using the module for your scientific research please consider citing:
 
 
 ```
-    @misc{divece_2023_commodity,
-      title = {Commodity-specific triads in the Dutch inter-industry production network},
-      author = {Di Vece, Marzio and Pijpers, Frank P. and Garlaschelli, Diego},
+    @misc{divece2023commodityspecific,
+      title={Commodity-specific triads in the Dutch inter-industry production network}, 
+      author={Marzio Di Vece and Frank P. Pijpers and Diego Garlaschelli},
       year={2023},
-      eprint={forthcoming},
+      eprint={2305.12179},
       archivePrefix={arXiv},
       primaryClass={physics.soc-ph}
-    }
+}
 
 ```
 #### Contents
