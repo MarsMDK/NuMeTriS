@@ -51,7 +51,7 @@ The available models are:
 Please refer to the paper for further details.
 
 ## Installation
-DyGyS can be installed via [pip](https://pypi.org/project/NuMeTriS/). You can do it from your terminal
+NuMeTriS can be installed via [pip](https://pypi.org/project/NuMeTriS/). You can do it from your terminal
 ```
     $ pip install NuMeTriS
 ```
