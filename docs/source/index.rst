@@ -201,6 +201,7 @@ Guide
 References
 =====================
 
-    - [1] M Di Vece, F P Pijpers and D Garlaschelli, *Commodity-specific triads in the Dutch inter-industry production network*, 
+    - [1] M Di Vece, F P Pijpers and D Garlaschelli, *Commodity-specific triads in the Dutch inter-industry production network*,  	arXiv:2305.12179 [physics.soc-ph] (2023),  	
+https://doi.org/10.48550/arXiv.2305.12179
     - [2] Jukka-Pekka Onnela, Jari Saramäki, János Kertész, and Kimmo Kaski, *Intensity and coherence of motifs in weighted complex networks*, Phys. Rev. E 71 065103(R) (2005), https://journals.aps.org/pre/abstract/10.1103/PhysRevE.71.065103
     
