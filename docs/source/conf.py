@@ -25,7 +25,7 @@ copyright = "2023, Marzio Di Vece"
 author = "Marzio Di Vece"
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.6.'
+release = '0.0.7.'
 
 
 # -- General configuration ---------------------------------------------------
