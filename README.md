@@ -156,7 +156,7 @@ It is possible to plot z-scores using the argument type='z-scores', significance
 
 
 ## Documentation
-You can find the complete documentation of the DyGyS library in [documentation](https://numetris.readthedocs.io/en/latest/index.html)
+You can find the complete documentation of the NuMeTriS library in [documentation](https://numetris.readthedocs.io/en/latest/index.html)
 
 ## Credits
 
