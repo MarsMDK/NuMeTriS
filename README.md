@@ -9,7 +9,7 @@ All of these models are explained in [1](forthcoming on ArXiv).
 The use of DBCM and CReMa enable the user to explicitly constrain network properties based on direction, such as out-degree, in-degree (binary) and out-strength and in-strength (weighted).
 In contrast, the use of RBCM and CRWCM enable the user to constrain network properties based on both direction and reciprocity, such as the reciprocated and non-reciprocated degrees and the reciprocated and non-reciprocated strengths.
 
-Moreover, after solving the models it is possible to generate the related ensembles and compute triadic occurrences, the arithmetic mean of the weights on triadic structures (average fluxes) and their geometric mean (intensities). While triadic occurrences and fluxes are explained in [1](forthcoming on ArXiv), the triadic intensity is the geometric mean of the weights in triadic structures, as explained in [2](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.71.065103) but here defined for all 13 sub-graphs.
+Moreover, after solving the models it is possible to generate the related ensembles and compute triadic occurrences, the arithmetic mean of the weights on triadic structures (average fluxes) and their geometric mean (intensities). While triadic occurrences and fluxes are explained in [1]([forthcoming on ArXiv](https://arxiv.org/abs/2305.12179)), the triadic intensity is the geometric mean of the weights in triadic structures, as explained in [2](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.71.065103) but here defined for all 13 sub-graphs.
 
 To explore Maximum-Entropy modeling on networks, checkout [Maximum Entropy Hub](https://meh.imtlucca.it/).
 
