@@ -21,11 +21,11 @@ To explore Maximum-Entropy modeling on networks, checkout [Maximum Entropy Hub](
 When using the module for your scientific research please consider citing:
 
 ::
-    @misc{divece_2023_commodity,
-      title = {Commodity-specific triads in the Dutch inter-industry production network},
-      author = {Di Vece, Marzio and Pijpers, Frank P. and Garlaschelli, Diego},
+    @misc{divece2023commodityspecific,
+      title={Commodity-specific triads in the Dutch inter-industry production network}, 
+      author={Marzio Di Vece and Frank P. Pijpers and Diego Garlaschelli},
       year={2023},
-      eprint={forthcoming},
+      eprint={2305.12179},
       archivePrefix={arXiv},
       primaryClass={physics.soc-ph}
     }
