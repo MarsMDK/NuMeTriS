@@ -180,9 +180,15 @@ Credits
 
 *Acknowledgments*:
 The module was developed under the supervision of [Diego Garlaschelli](https://www.imtlucca.it/en/diego.garlaschelli) and [Frank P. Pijpers](https://www.uva.nl/profiel/p/i/f.p.pijpers/f.p.pijpers.html).
-It was developed at [IMT School for Advanced Studies Lucca](https://www.imtlucca.it/en) and [Statistics Netherlands](https://www.cbs.nl/en-gb), and
-supported by the Italian ‘Programma di Attività Integrata’ (PAI) project ‘Prosociality, Cognition and Peer Effects’ (Pro.Co.P.E.), funded by IMT School for Advanced Studies.
-
+It was developed at [IMT School for Advanced Studies Lucca](https://www.imtlucca.it/en) and [Statistics Netherlands](https://www.cbs.nl/en-gb).
+This work is supported by the European Union - Horizon 2020 Program under the scheme “INFRAIA-01-2018-2019 – Integrating Activities for Advanced Communities”, Grant Agreement n. 871042, ‘SoBigData++: European Integrated Infrastructure for Social Mining and Big Data Analytics’ [(http://www.sobigdata.eu)](http://www.sobigdata.eu). This module was also supported by the Italian ‘Programma di Attività Integrata’ (PAI) project ‘Prosociality, Cognition and Peer Effects’ (Pro.Co.P.E.), funded by IMT School for Advanced Studies.
+This work is supported by the
+European Union - Horizon 2020 Program under the
+scheme “INFRAIA-01-2018-2019 – Integrating Activ-
+ities for Advanced Communities”, Grant Agreement
+n. 871042, ‘SoBigData++: European Integrated In-
+frastructure for Social Mining and Big Data Analyt-
+ics’ (http://www.sobigdata.eu).
 
 
 Guide
