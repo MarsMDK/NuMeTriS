@@ -1,15 +1,15 @@
-![PyPI](https://img.shields.io/badge/pypi-v2.1.1-blue)  [![License:GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![Python Version](https://img.shields.io/badge/Python-3.9%20%7C%203.10-blue) [![arXiv](https://img.shields.io/badge/arXiv-2305.12179-orange)](https://arxiv.org/abs/2305.12179)
+![PyPI](https://img.shields.io/badge/pypi-v2.1.1-blue)  [![License:GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![Python Version](https://img.shields.io/badge/Python-3.9%20%7C%203.10-blue) [![SciRep](https://img.shields.io/badge/arXiv-2305.12179-orange)](https://www.nature.com/articles/s41598-024-53655-3)
 
 # NuMeTriS: NUll ModEls for TRIadic Structures
 
 NuMeTriS is a package developed on python3 for Pattern Detection of the 13 triadic connected sub-graphs using maximum-entropy models using direected and reciprocated constraints on network data.
 
 NuMeTriS provides solvers for the binary models DBCM and RBCM, and the conditional weighted models CReMa and CRWCM.
-All of these models are explained in [[1](https://arxiv.org/abs/2305.12179)].
+All of these models are explained in [[1](https://www.nature.com/articles/s41598-024-53655-3)].
 The use of DBCM and CReMa enable the user to explicitly constrain network properties based on direction, such as out-degree, in-degree (binary) and out-strength and in-strength (weighted).
 In contrast, the use of RBCM and CRWCM enable the user to constrain network properties based on both direction and reciprocity, such as the reciprocated and non-reciprocated degrees and the reciprocated and non-reciprocated strengths.
 
-Moreover, after solving the models it is possible to generate the related ensembles and compute triadic occurrences, the arithmetic mean of the weights on triadic structures (average fluxes) and their geometric mean (intensities). While triadic occurrences and fluxes are explained in [[1](https://arxiv.org/abs/2305.12179)], the triadic intensity is the geometric mean of the weights in triadic structures, as explained in [[2](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.71.065103)] but here defined for all 13 sub-graphs.
+Moreover, after solving the models it is possible to generate the related ensembles and compute triadic occurrences, the arithmetic mean of the weights on triadic structures (average fluxes) and their geometric mean (intensities). While triadic occurrences and fluxes are explained in [[1](https://www.nature.com/articles/s41598-024-53655-3)], the triadic intensity is the geometric mean of the weights in triadic structures, as explained in [[2](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.71.065103)] but here defined for all 13 sub-graphs.
 
 To explore Maximum-Entropy modeling on networks, checkout [Maximum Entropy Hub](https://meh.imtlucca.it/).
 
@@ -17,13 +17,14 @@ When using the module for your scientific research please consider citing:
 
 
 ```
-    @misc{divece2023commodityspecific,
+    @article{divece2024commodityspecific,
       title={Commodity-specific triads in the Dutch inter-industry production network}, 
       author={Marzio Di Vece and Frank P. Pijpers and Diego Garlaschelli},
-      year={2023},
+      year={2024},
       eprint={2305.12179},
-      archivePrefix={arXiv},
-      primaryClass={physics.soc-ph}
+      journal = {Scientific Reports},
+      number={14},
+      pages = {3625}
 }
 
 ```
@@ -84,6 +85,13 @@ To inizialize a Graph instance you can type:
     G = Graph(adjacency=Wij)
 
 where Wij is the weighted adjacency matrix in 2-D numpy array format.
+
+If you want to initialize a sparse matrix you can type:
+
+    G = Sparse_Graph(adjacency=Wij)
+
+In this case, a csr sparse matrix is necessary in input.
+
 
 After initializing you can already explore core network statistics such as (out-)degree, in-degree, reciprocated degrees, non-reciprocated out-degrees and non-reciprocated in-degrees, available using the respective codewords:
 
