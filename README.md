@@ -1,4 +1,4 @@
-![PyPI](https://img.shields.io/badge/pypi-v2.1.1-blue)  [![License:GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![Python Version](https://img.shields.io/badge/Python-3.9%20%7C%203.10-blue) [![SciRep](https://img.shields.io/badge/arXiv-2305.12179-orange)](https://www.nature.com/articles/s41598-024-53655-3)
+![PyPI](https://img.shields.io/badge/pypi-v2.1.1-blue)  [![License:GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![Python Version](https://img.shields.io/badge/Python-3.9%20%7C%203.10-blue) [![SciRep](https://img.shields.io/badge/SciRep-14.3625-orange)](https://www.nature.com/articles/s41598-024-53655-3)
 
 # NuMeTriS: NUll ModEls for TRIadic Structures
 
@@ -21,9 +21,8 @@ When using the module for your scientific research please consider citing:
       title={Commodity-specific triads in the Dutch inter-industry production network}, 
       author={Marzio Di Vece and Frank P. Pijpers and Diego Garlaschelli},
       year={2024},
-      eprint={2305.12179},
       journal = {Scientific Reports},
-      number={14},
+      number= {14},
       pages = {3625}
 }
 
