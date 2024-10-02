@@ -5,7 +5,7 @@ from scipy.optimize import least_squares as lsq
 
 
 
-@jit(nopython=True,fastmath=True) 
+
 def ll_DBCM(params,k_out,k_in):
 
     """Opposite Log-likelihood function for the DBCM, saved in self.ll"""
@@ -29,7 +29,7 @@ def ll_DBCM(params,k_out,k_in):
     return  - ll
 
 
-@jit(nopython=True,fastmath=True) 
+
 def jac_DBCM(params,k_out,k_in):
 
     """Opposite Jacobian for the DBCM, saved in self.jacobian"""
@@ -59,7 +59,7 @@ def jac_DBCM(params,k_out,k_in):
 
     return  - jac
 
-@jit(nopython=True,fastmath=True) 
+
 def relative_error_DBCM(params,k_out,k_in):
 
     """Relative error function for the DBCM, saved in self.relative_error."""
@@ -97,7 +97,7 @@ def relative_error_DBCM(params,k_out,k_in):
     return  - jac
 
 
-@jit(nopython=True,fastmath=True) 
+
 def hess_DBCM(params,k_out,k_in):
 
     """Computes opposite of the Hessian function for the DBCM.
@@ -158,7 +158,7 @@ def hess_DBCM(params,k_out,k_in):
 
 
 
-@jit(nopython=True,fastmath=True) 
+
 def ll_RBCM(params,k_right,k_left,k_rec):
     
     """Opposite Log-likelihood function for the RBCM, saved in self.ll"""
@@ -186,7 +186,7 @@ def ll_RBCM(params,k_right,k_left,k_rec):
                 
     return  - ll
 
-@jit(nopython=True,fastmath=True) 
+
 def jac_RBCM(params,k_right,k_left,k_rec):
     """Opposite jacobian function for the RBCM, saved in self.ll"""
     
@@ -224,7 +224,7 @@ def jac_RBCM(params,k_right,k_left,k_rec):
     
     return - jac
 
-@jit(nopython=True,fastmath=True) 
+
 def relative_error_RBCM(params,k_right,k_left,k_rec):
     """Relative error in the solution of the RBCM, saved in self.relative_error"""
     
@@ -273,7 +273,7 @@ def relative_error_RBCM(params,k_right,k_left,k_rec):
     return - jac
 
 
-@jit(nopython=True,fastmath=True) 
+
 def hess_RBCM(params,k_right,k_left,k_rec):
     """Computes opposite of the Hessian function for the RBCM.
     
@@ -358,7 +358,7 @@ def hess_RBCM(params,k_right,k_left,k_rec):
     return - hess
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def ll_CReMa_after_DBCM(params,s_out,s_in,params_DBCM):
 
     """Computes opposite of the log-likelihood function for the conditional weighted model CReMa after the solution of DBCM."""
@@ -382,7 +382,7 @@ def ll_CReMa_after_DBCM(params,s_out,s_in,params_DBCM):
             
     return - ll
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def jac_CReMa_after_DBCM(params,s_out,s_in,params_DBCM):
 
     """Computes opposite of the jacobian function for the conditional weighted model CReMa after the solution of DBCM."""
@@ -413,7 +413,7 @@ def jac_CReMa_after_DBCM(params,s_out,s_in,params_DBCM):
                 
     return - jac
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def relative_error_CReMa_after_DBCM(params,s_out,s_in,params_DBCM):
 
     """Computes opposite of the relative_error function for the conditional weighted model CReMa after the solution of DBCM."""
@@ -450,7 +450,7 @@ def relative_error_CReMa_after_DBCM(params,s_out,s_in,params_DBCM):
 
     return - jac
 
-@jit(nopython=True)
+# @jit(nopython=True)
 def hess_CReMa_after_DBCM(params,s_out,s_in,params_DBCM):
 
     """Computes opposite of the hessian function for the conditional weighted model CReMa after the solution of DBCM.
@@ -505,7 +505,7 @@ def hess_CReMa_after_DBCM(params,s_out,s_in,params_DBCM):
     return - hess
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def ll_CRWCM_after_RBCM(params,s_right,s_left,s_rec_out,s_rec_in,params_RBCM):
 
     """Computes opposite of the log-likelihood function for the conditional weighted model CRWCM after the solution of RBCM.
@@ -549,7 +549,7 @@ def ll_CRWCM_after_RBCM(params,s_right,s_left,s_rec_out,s_rec_in,params_RBCM):
         
     return - ll
 
-@jit(nopython=True,fastmath=False)
+# @jit(nopython=True,fastmath=False)
 def ll_CRWCM_after_RBCM_rl(params,s_right,s_left,params_RBCM):
 
     """Computes opposite of the log-likelihood function for the conditional weighted model CRWCM after the solution of RBCM for the
@@ -588,7 +588,7 @@ def ll_CRWCM_after_RBCM_rl(params,s_right,s_left,params_RBCM):
     
     return - ll
 
-@jit(nopython=True,fastmath=False)
+# @jit(nopython=True,fastmath=False)
 def ll_CRWCM_after_RBCM_rec(params,s_rec_out,s_rec_in,params_RBCM):
 
     """Computes opposite of the log-likelihood function for the conditional weighted model CRWCM after the solution of RBCM for the
@@ -626,7 +626,7 @@ def ll_CRWCM_after_RBCM_rec(params,s_rec_out,s_rec_in,params_RBCM):
     return - ll
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def jac_CRWCM_after_RBCM(params,s_right,s_left,s_rec_out,s_rec_in,params_RBCM):
 
     """Computes opposite of the jacobian function for the conditional weighted model CRWCM after the solution of RBCM.
@@ -674,7 +674,7 @@ def jac_CRWCM_after_RBCM(params,s_right,s_left,s_rec_out,s_rec_in,params_RBCM):
                 
     return - jac
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def relative_error_CRWCM_after_RBCM(params,s_right,s_left,s_rec_out,s_rec_in,params_RBCM):
 
     """Computes opposite of the relative error function for the conditional weighted model CRWCM after the solution of RBCM. 
@@ -733,7 +733,7 @@ def relative_error_CRWCM_after_RBCM(params,s_right,s_left,s_rec_out,s_rec_in,par
     return - jac
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def jac_CRWCM_after_RBCM_rl(params,s_right,s_left,params_RBCM):
 
     """Computes opposite of the jacobian function for the conditional weighted model CRWCM after the solution of RBCM,
@@ -776,7 +776,7 @@ def jac_CRWCM_after_RBCM_rl(params,s_right,s_left,params_RBCM):
     return - jac
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def hess_CRWCM_after_RBCM_rl(params,s_right,s_left,params_RBCM):
 
     """Computes opposite of the hessian function for the conditional weighted model CRWCM after the solution of RBCM,
@@ -840,7 +840,7 @@ def hess_CRWCM_after_RBCM_rl(params,s_right,s_left,params_RBCM):
     return - hess
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def jac_CRWCM_after_RBCM_rec(params,s_rec_out,s_rec_in,params_RBCM):
 
     """Computes opposite of the jacobian function for the conditional weighted model CRWCM after the solution of RBCM,
@@ -885,7 +885,7 @@ def jac_CRWCM_after_RBCM_rec(params,s_rec_out,s_rec_in,params_RBCM):
                 
     return - jac
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def hess_CRWCM_after_RBCM_rec(params,s_rec_out,s_rec_in,params_RBCM):
 
     """Computes opposite of the hessian function for the conditional weighted model CRWCM after the solution of RBCM,
@@ -956,7 +956,7 @@ def hess_CRWCM_after_RBCM_rec(params,s_rec_out,s_rec_in,params_RBCM):
 
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def armijo_condition(
     f_old, f_new, alpha, grad_f, p, c1=1e-04
 ):
@@ -968,7 +968,7 @@ def armijo_condition(
     
     return bool(f_new < sup)
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def curvature_condition(
     grad_f, grad_f_new, p, c2=0.9
 ):
@@ -983,7 +983,7 @@ def curvature_condition(
     
     return bool(a >= b)
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def linsearch_fun_DBCM(X,args):
 
     """Function for the linear search of optimal parameter for Newton optimisation of DBCM."""
@@ -1010,7 +1010,7 @@ def linsearch_fun_DBCM(X,args):
     return alfa
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def linsearch_fun_RBCM(X,args):
 
     """Function for the linear search of optimal parameter for Newton optimisation of RBCM."""
@@ -1037,7 +1037,7 @@ def linsearch_fun_RBCM(X,args):
 
     return alfa
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def linsearch_fun_CRWCM_separated(X,args):
 
     """Function for the linear search of optimal parameter for Newton optimisation of CRWCM and CReMa."""
@@ -1091,13 +1091,13 @@ def linsearch_fun_CRWCM_separated(X,args):
     return alfa
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def is_pos_def(x):
     """Auxiliary function to test definite positiveness of a matrix"""
     return np.all(np.linalg.eigvals(x) > 0)
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def hessian_regulariser_function(B, eps):
     """Auxiliary function to regularise hessian during Newton Optimisation."""
     
@@ -1106,7 +1106,7 @@ def hessian_regulariser_function(B, eps):
     B = B + np.identity(sh1) * eps
     return B
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def solver_newton(x0,ll,jac,hess,args=(),
                         trust_mult = 1e-5,lins = linsearch_fun_CRWCM_separated,
                         tol=1e-8,
@@ -1462,7 +1462,7 @@ def solve_CRWCM_after_RBCM(s_right,s_left,s_rec_out,s_rec_in,params_RBCM,verbose
 
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def matrixate(input):
 
     """Compute a numpy matrix from corresponding flattened vector"""
@@ -1474,7 +1474,7 @@ def matrixate(input):
             matrix[i,j] = input[ij]
     return matrix
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def binarize(input):
 
     """Compute binary projection of numpy matrix"""
@@ -1488,7 +1488,7 @@ def binarize(input):
                     byn[i,j] = 1.
     return byn
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def symmetrize(input):
 
     """Symmetrize numpy matrix in input."""
@@ -1505,7 +1505,7 @@ def symmetrize(input):
     return symm
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def L_rec(adj):
 
     """Computes number of reciprocated links."""
@@ -1520,7 +1520,7 @@ def L_rec(adj):
     return reciprocated_edges
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def n_edges_func(adj):
 
     """Computes number of links."""
@@ -1535,7 +1535,7 @@ def n_edges_func(adj):
 
     return n_edges
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def gen_binary_adjacencies(adj):
 
     """Computes reciprocated and non-reciprocated components of binary adjacencies."""
@@ -1564,7 +1564,7 @@ def gen_binary_adjacencies(adj):
                 
     return adj_right,adj_left,adj_rec,adj_unrec
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def gen_weighted_adjacencies(adj,w_adj):
 
     """Computes reciprocated and non-reciprocated components of weighted adjacencies for fast computation of triadic intensities."""
@@ -1596,7 +1596,7 @@ def gen_weighted_adjacencies(adj,w_adj):
     return w_adj_right,w_adj_left,w_adj_rec,w_adj_unrec
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def gen_rec_weighted_adjacencies(adj,w_adj):
 
     """Computes reciprocated components of weighted adjacencies for fast computation of triadic fluxes."""
@@ -1623,7 +1623,7 @@ def gen_rec_weighted_adjacencies(adj,w_adj):
     return w_adj_rec_out,w_adj_rec_in
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def deg(adj):
 
     """Computes the degree centrality given binary adjacency matrix."""
@@ -1638,7 +1638,7 @@ def deg(adj):
     
     return deg
     
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def deg_out(adj):
 
     """Computes the out-degree centrality given binary adjacency matrix."""
@@ -1653,10 +1653,10 @@ def deg_out(adj):
     
     return deg
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def deg_in(adj): return deg(adj.transpose())
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def deg_right(adj):
 
     """Computes the non-reciprocated out-degree centrality given binary adjacency matrix."""
@@ -1670,7 +1670,7 @@ def deg_right(adj):
                 k_right[i] += adj[i,j]*(1.-adj[j,i])
     return k_right
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def deg_left(adj):
     """Computes the non-reciprocated in-degree centrality given binary adjacency matrix."""
     n_suppliers = adj.shape[0]
@@ -1683,7 +1683,7 @@ def deg_left(adj):
                 k_left[i] += adj[j,i]*(1.-adj[i,j])
     return k_left
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def deg_rec(adj):
     """Computes the reciprocated degree centrality given binary adjacency matrix."""
     n_suppliers = adj.shape[0]
@@ -1697,7 +1697,7 @@ def deg_rec(adj):
     return k_rec
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def st_right(adj,w_adj):
 
     """Computes the non-reciprocated out-strength centrality given binary adjacency matrix and weighted adjacency matrix."""
@@ -1711,7 +1711,7 @@ def st_right(adj,w_adj):
                 st_right[i] += adj[i,j]*(1.-adj[j,i])*w_adj[i,j]
     return st_right
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def st_left(adj,w_adj):
     """Computes the non-reciprocated in-strength centrality given binary adjacency matrix and weighted adjacency matrix."""
    
@@ -1726,7 +1726,7 @@ def st_left(adj,w_adj):
                 st_left[i] += adj[j,i]*(1.-adj[i,j])*w_adj[j,i]
     return st_left
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def st_rec_out(adj,w_adj):
     """Computes the reciprocated out-strength centrality given binary adjacency matrix and weighted adjacency matrix."""
     n_s = adj.shape[0]
@@ -1739,7 +1739,7 @@ def st_rec_out(adj,w_adj):
                 st_rec[i] += adj[j,i]*adj[i,j]*w_adj[i,j]
     return st_rec
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def st_rec_in(adj,w_adj):
     """Computes the reciprocated in-strength centrality given binary adjacency matrix and weighted adjacency matrix."""
     n_s = adj.shape[0]
@@ -1752,7 +1752,7 @@ def st_rec_in(adj,w_adj):
                 st_rec[i] += adj[j,i]*adj[i,j]*w_adj[j,i]
     return st_rec
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def triadic_occurrence(adj_1,adj_2,adj_3):
     
     adj_1 = np.ascontiguousarray(adj_1)
@@ -1764,7 +1764,7 @@ def triadic_occurrence(adj_1,adj_2,adj_3):
 
         
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def triadic_occurrences(adj_right,adj_left,adj_rec,adj_unrec):
     """Computes the triadic occurrence for the 13 triadic occurrences given the reciprocated and 
     non-reciprocated components of the binary adjacency matrix."""
@@ -1790,7 +1790,7 @@ def triadic_occurrences(adj_right,adj_left,adj_rec,adj_unrec):
     
     return Nm
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def triadic_intensities(adj_right,adj_left,adj_rec,adj_unrec):
 
     """Computes the triadic intensity for the 13 triadic occurrences given the reciprocated and 
@@ -1841,7 +1841,7 @@ def triadic_intensities(adj_right,adj_left,adj_rec,adj_unrec):
 
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def triadic_fluxes(adj_right,adj_left,adj_rec,adj_unrec,wadj_right,wadj_left,wadj_rec_out,wadj_rec_in):
     
     """Computes the triadic average flux for the 13 triadic occurrences given the reciprocated and 
@@ -1877,7 +1877,7 @@ def triadic_fluxes(adj_right,adj_left,adj_rec,adj_unrec,wadj_right,wadj_left,wad
     return Fm
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def compute_zscores(stat_emp,stat_exp,stat_down,stat_up,stat_std):
 
     """Compute z-scores given expected statistics, empirical statistics and wanted percentiles."""
@@ -1906,14 +1906,14 @@ def compute_zscores(stat_emp,stat_exp,stat_down,stat_up,stat_std):
 
 
 
-@jit(nopython=True,fastmath=True,cache=False)
+# @jit(nopython=True,fastmath=True,cache=False)
 def IT_sampling_Exponential(random_array,cond_wij):
     """Inverse Transform Sampling for the Exponential distribution."""
     x_array = -cond_wij*np.log(1.-random_array)
     return x_array
   
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def gen_top_mat_DBCM(params):
 
     """Generate a sample of the binary adjacency matrix via DBCM"""
@@ -1943,7 +1943,7 @@ def gen_top_mat_DBCM(params):
     return aij
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def gen_top_mat_RBCM(params):
 
     """Generate a sample of the binary adjacency matrix via RBCM"""
@@ -1995,7 +1995,7 @@ def gen_top_mat_RBCM(params):
     
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def gen_w_mat_CReMa(weighted_params,fij_adj):
 
     """Generate a sample of the weighted adjacency matrix via CReMa"""
@@ -2031,7 +2031,7 @@ def gen_w_mat_CReMa(weighted_params,fij_adj):
     return w_mat
 
 
-@jit(nopython=True,fastmath=True)
+# @jit(nopython=True,fastmath=True)
 def gen_w_mat_CRWCM(weighted_params,fij_adj):
 
     """Generate a sample of the weighted adjacency matrix via CRWCM"""
@@ -2114,7 +2114,7 @@ def occurrence_ensembler_DBCM(params,n_ensemble = 1000,percentiles=(0,100)):
 
 
 
-@jit(nopython=True,fastmath=True,parallel=True)
+# @jit(nopython=True,fastmath=True,parallel=True)
 def occurrence_ensembler_RBCM(params,n_ensemble = 1000,percentiles=(0,100)):
     
     """Computes triadic occurrences as expected according to the RBCM."""
@@ -2192,7 +2192,7 @@ def occurrence_intensity_fluxes_ensembler_DBCM_CReMa(params,n_ensemble = 1000,pe
     
     return netstats_Nm,netstats_Im,netstats_Fm
 
-#@jit(nopython=True,fastmath=True)
+## @jit(nopython=True,fastmath=True)
 def occurrence_intensity_fluxes_ensembler_RBCM_CRWCM(params,n_ensemble = 1000,percentiles=(0,100)):
 
     """Computes triadic intensities and flusxes as expected according to the RBCM+CRWCM."""
